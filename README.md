@@ -1,7 +1,6 @@
 Garbage_Collector
 =================
-Written in C
-This garbage collector will track and reclaim memory from two different data structures, a linked list and a file system tree. Allocated space is tracked when the user calls the wrapper function 'gc_malloc' and removed when the user calls 'mark_and_sweep' on their data structure.
+Written in C, this is a demo garbage collector that will track and reclaim memory from two different data structures, a linked list and a file system tree. Allocated space is tracked when the user calls the wrapper function 'gc_malloc' and removed when the user calls 'mark_and_sweep' on their data structure.
 
 Files
 ----------
@@ -38,7 +37,7 @@ Log contains the follosing info:
  - Number of elements in gc before sweep
  - Number of elements freed
  - Number of elements in gc after sweep
-'element' referes to anything that was malloced. attributes of structs included.
+'element' referes to anything that was malloced. Attributes of structs included.
 You can use this information to see that after a mark and sweep
 the number of elements in the data structure is equal to the number of elements
 in the garbage collector.
